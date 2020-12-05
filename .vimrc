@@ -10,19 +10,14 @@ Plug 'tpope/vim-commentary'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
 " Enable mouse
 set mouse=a
+
 " Disable bells sound
 set belloff=all
-
-set nrformats=
 
 " Enable nocompatible mode with vi
 set nocompatible
@@ -41,9 +36,6 @@ set background=dark
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree " Open NERDTree when Vim starts 
 let NERDTreeShowHidden=1 " Show hidden files
-
-" Commenting code
-" noremap <leader>/ :Commentary<cr>
 
 " Rows
 set number "set rows numbers
@@ -96,9 +88,6 @@ function! s:build_go_files()
   endif
 endfunction
 
-" Autocomplete when press the dot
-"au filetype go inoremap <buffer> . .<C-x><C-o>
-
 " Map keys for most used commands.
 " Ex\: `\b` for building, `\r` for running and `\t` for running test.
 
@@ -111,7 +100,3 @@ set backspace=indent,eol,start
 
 " Press Esc Esc to undo hlsearch
 nnoremap <silent> <esc><esc> :nohlsearch<CR>
-
-" Vim-airline settings
-
-" let g:airline#extensions#tabline#enabled = 1
