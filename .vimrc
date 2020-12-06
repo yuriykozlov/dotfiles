@@ -1,3 +1,8 @@
+language en_US
+set encoding=utf-8
+" Russian symbols support for switching between modes
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Project and file navigation
@@ -50,9 +55,6 @@ set smartindent
 " Search
 set hlsearch "highlight search results
 set incsearch "enable incremental search
-
-" Russian symbols support for switching between mode
-set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 " Enable rainbow brackets (1 = enable, 0 = disable)
 let g:rainbow_active = 0
