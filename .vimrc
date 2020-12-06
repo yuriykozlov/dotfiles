@@ -18,6 +18,10 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+if has('gui_running')
+  set guifont=Consolas:h11
+endif
+
 " Enable mouse
 set mouse=a
 
