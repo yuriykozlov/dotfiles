@@ -15,6 +15,7 @@ Plug 'tpope/vim-commentary'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
